@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jake's Coffee Shop</title>
+    <style>
+        body {
+            font-family: Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffcc;
+            color: #330000;
+            font-size: 20px; /* Increased font size */
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #ccaa66;
+            padding: 30px 0;
+            text-align: center;
+            border-bottom: 5px solid #330000;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        header p {
+            margin: 0;
+            font-size: 18px;
+        }
+        .content {
+            display: flex;
+            flex: 1;
+        }
+        #leftcolumn {
+            width: 150px;
+            padding-top: 10px;
+            background-color: #E8D882;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        #rightcolumn {
+            margin-left: 20px;
+            background-color: #f1e8b0;
+            padding: 10px 20px;
+            flex-grow: 1;
+        }
+        .navBar {
+            text-decoration: none;
+            margin: 5px 0;
+            display: block;
+            color: blue; /* Text color set to blue */
+            padding: 8px;
+            font-weight: bold;
+        }
+        .navBar:hover {
+            color: #003399; /* Darker blue on hover */
+        }
+        .floatcenter {
+            display: block;
+            margin: 10px auto; /* Centering the image and reducing top/bottom margin */
+            width: 500px; /* Image width */
+            height: 500px; /* Image height */
+        }
+        footer {
+            background-color: #ccaa66;
+            color: #330000;
+            text-align: center;
+            padding: 20px 0;
+            border-top: 5px solid #330000;
+        }
+        footer a {
+            color: blue;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Jake's Coffee Shop</h1>
+        <p>2021-09-17</p>
+    </header>
+
+    <div class="content">
+        <div id="leftcolumn">
+            <a href="#" class="navBar">Home</a>
+            <a href="#" class="navBar">Menu</a>
+            <a href="#" class="navBar">Music</a>
+            <a href="#" class="navBar">Jobs</a>
+        </div>
+
+        <div id="rightcolumn">
+            <h2>Come in and experience...</h2>
+            <ul>
+                <li>Specialty Coffee and Tea</li>
+                <li>Freshly made sandwiches</li>
+                <li>Bagels, Muffins, and Organic Snacks</li>
+                <li>Music and Poetry Readings</li>
+                <li>Open mic nights</li>
+            </ul>
+            <p>23 Prine Road<br>
+               Nottingham, NG1 5YU<br>
+               0115 9324567
+            </p>
+            <img src="coffe.jpeg" alt="Coffee" class="floatcenter"> <!-- Updated image source -->
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2011 Jake's Coffee House.</p>
+        <p>Contact us at <a href="mailto:jake@jcoffee.com">jake@jcoffee.com</a></p>
+    </footer>
+</div>
+
+</body>
+</html>
